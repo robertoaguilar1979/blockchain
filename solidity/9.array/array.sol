@@ -10,5 +10,7 @@ contract Array {
         array[index] = element;
     }
     
-   
+   function arrayLenth() public view returns(uint){
+    return array.length;
+   }
 }
