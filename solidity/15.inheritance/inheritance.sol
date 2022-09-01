@@ -11,5 +11,7 @@ contract inheritance {
         stringOne="hello world";
         manager= msg.sender;
     }
-    
+    function setter(string memory _stringOne)  public {
+        stringOne=_stringOne;
+    }
 }
