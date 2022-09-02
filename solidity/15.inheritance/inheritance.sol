@@ -3,7 +3,7 @@
 pragma solidity ^0.8.3;
 
 
-contract inheritance {
+contract inheritanceParent {
     string public stringOne;
     address public manager;
 
@@ -14,4 +14,8 @@ contract inheritance {
     function setter(string memory _stringOne)  public {
         stringOne=_stringOne;
     }
+}
+
+contract Child is inheritanceParent {
+    uint public x;
 }
